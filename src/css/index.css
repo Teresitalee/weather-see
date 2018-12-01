@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-image: url(https://futuroverde.org/wp-content/uploads/2018/09/clima-extremo-estudio-ecosistemas.jpg)
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -11,4 +12,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#ciudad{
+  size: 10px;
 }
