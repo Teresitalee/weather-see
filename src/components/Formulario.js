@@ -35,10 +35,9 @@ class Formulario extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-3">
                     <div className="input-group">
-                        <div className="input-group-prepend"><span className="input-group-text">Ciudad</span>
+                        <div className="input-group-prepend fa-amazon"><span className="input-group-text">Ciudad</span>
                           </div>
-                        <input className="form-control" type="text" />
-                        
+                        <input className="form-control" type="text" />  
                     </div>
                 </div>
 
@@ -72,8 +71,8 @@ class Formulario extends Component {
                     </div>
 
                      
-                <div className="col-md-3">
-                   <button className="btn btn-success btn-lg " type="submit">Buscar...</button>
+                <div className="col-md-6">
+                   <button className="btn btn-success btn-md " type="submit">Buscar...</button>
                  </div>
                </div>
            </div>
