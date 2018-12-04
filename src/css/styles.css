@@ -1,6 +1,13 @@
 body{
-    background-image: url(http://genchi.info/images/forest-wallpaper-24.jpg);
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed
+    background-image: url(http://genchi.info/images/forest-wallpaper-24.jpg);    
+}
+
+.card{
+    align-items: center;
+    justify-items: center;
+    font-size: comic sans
+}
+
+.btn{
+    font-size: 10px
 }

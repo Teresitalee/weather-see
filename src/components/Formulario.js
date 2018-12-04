@@ -4,43 +4,81 @@ class Formulario extends Component {
 
     //creacion de Refs
 
+    ciudadRef = React.createRef();
+    paisRef = React.createRef();
+
+
     buscarClima = (e) =>{
         e.preventDefault();
 
-    // leer los refs y crear el objeto    
+    // leer los refs y crear el objeto 
+
+    const respuesta = {
+        ciudad: this.ciudadRef.current.value,
+        pais:this.paisRef.current.value
+    }
+
+    //console.log(respuesta);
+    
+    // enviar los props
+   this.props.datosConsulta(respuesta);
+
+    // resetear el form (opcional)
 
 
     }
     
     render() { 
         return (
-            <div className="container col-xl-12 ml-5 ">
-             <div className="card bg-danger w-75 mt-5 pt-3 ">
-              <div className="card-body">
-                <div className="flex-row ">
-                  <form className="form-group ml-5 pl-5">
-                    <label className="text-white mr-2 fa fa-globe"> Ciudad :</label>
-                      <input className="input-group-lg" />
-                      <label className="text-white mr-2 ml-4 fa fa-flag"> País :</label>
-                      <select class="form-control-xl mr-4" id="exampleFormControlSelect1">
-                        <option>Argentina</option>
-                        <option>Alemania</option>
-                        <option>China</option>
-                        <option>Chile</option>
-                        <option>Brazil</option>
-                   </select>
-                   <button type="submit" class="btn btn-dark btn-xl">Buscar....</button>
-                  </form>    
-                </div>     
+
+            <div className="container text-uppercase mt-5">
+              <div className="row justify-content-center">
+                <div className="col-md-3">
+                    <div className="input-group">
+                        <div className="input-group-prepend"><span className="input-group-text">Ciudad</span>
+                          </div>
+                        <input className="form-control" type="text" />
+                        
+                    </div>
                 </div>
-             </div>
-            </div> 
 
+                <div className="col-md-3">
+                   <div className="input-group mb-3 edtFormMarg">
+                      <div className="input-group-prepend">
+                        <label className="input-group-text" htmlFor="inputGroupSelect01">Pais</label>
+                       
+                         <select className="custom-select" id="inputGroupSelect01">
+                           <option selected>Elije un Pais</option>
+                             <option value="AR">Argentina</option>
+                             <option value="GER">Alemania</option>
+                             <option value="GER">Australia</option>
+                             <option value="GER">Brazil</option>
+                             <option value="CO">Colombia</option>
+                             <option value="CH">China</option>
+                             <option value="CH">Chile</option>
+                             <option value="GER">Ecuador</option>
+                             <option value="CH">Dinamarca</option>
+                             <option value="CH">Estados Unidos</option>
+                             <option value="CH">España</option>
+                             <option value="CH">Francia</option>
+                             <option value="CH">Islandia</option>
+                             <option value="GER">India</option>
+                             <option value="GER">Israel</option>
+                             <option value="GER">Italia</option>
+                             <option value="GER">Inglaterra</option>
+                        </select>
+                      </div>
+                    </div>
+                    </div>
 
-
-
-         )
-    }
+                     
+                <div className="col-md-3">
+                   <button className="btn btn-success btn-lg " type="submit">Buscar...</button>
+                 </div>
+               </div>
+           </div>
+      )
+   }
 }
  
 export default Formulario;
