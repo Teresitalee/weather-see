@@ -35,7 +35,7 @@ class Formulario extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-3">
                     <div className="input-group">
-                        <div className="input-group-prepend fa-amazon"><span className="input-group-text">Ciudad</span>
+                        <div className="input-group-prepen "><span className="input-group-text bg-primary border-primary text-white">Ciudad</span>
                           </div>
                         <input className="form-control" type="text" />  
                     </div>
@@ -44,7 +44,7 @@ class Formulario extends Component {
                 <div className="col-md-3">
                    <div className="input-group mb-3 edtFormMarg">
                       <div className="input-group-prepend">
-                        <label className="input-group-text" htmlFor="inputGroupSelect01">Pais</label>
+                        <label className="input-group-text bg-primary border-primary text-white" htmlFor="inputGroupSelect01">Pais</label>
                        
                          <select className="custom-select" id="inputGroupSelect01">
                            <option selected>Elije un Pais</option>
@@ -66,13 +66,13 @@ class Formulario extends Component {
                              <option value="GER">Italia</option>
                              <option value="GER">Inglaterra</option>
                         </select>
-                      </div>
                     </div>
-                    </div>
+                  </div>
+                </div>
 
                      
-                <div className="col-md-6">
-                   <button className="btn btn-success btn-md " type="submit">Buscar...</button>
+                <div className="col-md-3">
+                   <button className="btn btn-primary btn-md border-primary " type="submit">Buscar...</button>
                  </div>
                </div>
            </div>
