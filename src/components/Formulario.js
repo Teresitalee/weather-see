@@ -44,27 +44,26 @@ class Formulario extends Component {
                 <div className="col-md-3">
                    <div className="input-group mb-3 edtFormMarg">
                       <div className="input-group-prepend">
-                        <label className="input-group-text bg-primary border-primary text-white" htmlFor="inputGroupSelect01">Pais</label>
-                       
+                        <label className="input-group-text bg-primary border-primary text-white" htmlFor="inputGroupSelect01">País</label>
                          <select className="custom-select" id="inputGroupSelect01">
-                           <option selected>Elije un Pais</option>
+                           <option defaultValue>Elije un País</option>
                              <option value="AR">Argentina</option>
                              <option value="GER">Alemania</option>
-                             <option value="GER">Australia</option>
-                             <option value="GER">Brazil</option>
+                             <option value="AU">Australia</option>
+                             <option value="BR">Brazil</option>
                              <option value="CO">Colombia</option>
                              <option value="CH">China</option>
-                             <option value="CH">Chile</option>
+                             <option value="Cl">Chile</option>
                              <option value="GER">Ecuador</option>
                              <option value="CH">Dinamarca</option>
-                             <option value="CH">Estados Unidos</option>
-                             <option value="CH">España</option>
-                             <option value="CH">Francia</option>
-                             <option value="CH">Islandia</option>
-                             <option value="GER">India</option>
-                             <option value="GER">Israel</option>
-                             <option value="GER">Italia</option>
-                             <option value="GER">Inglaterra</option>
+                             <option value="EU">Estados Unidos</option>
+                             <option value="ES">España</option>
+                             <option value="FR">Francia</option>
+                             <option value="IS">Islandia</option>
+                             <option value="IN">India</option>
+                             <option value="IR">Israel</option>
+                             <option value="IT">Italia</option>
+                             <option value="EN">Inglaterra</option>
                         </select>
                     </div>
                   </div>

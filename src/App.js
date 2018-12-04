@@ -25,6 +25,7 @@ class App extends Component {
         })
     }
 
+    // consulta a la API VIA fetch
     consultaApi = () => {
         const {ciudad, pais} = this.state.consulta;
         if(!ciudad || !pais) return null;
@@ -33,6 +34,8 @@ class App extends Component {
         let url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appId}`;
 
         //console.log(url);
+
+    
     fetch(url)
     .then(response => {
         return response.json();
@@ -76,7 +79,7 @@ class App extends Component {
             resultado = <Error mensaje="Ambos campos son Obligatorios" />
 
         }else {
-            resultado = <Clima resultado = {this.state.resultado} />
+            resultado = <Clima resultado = {this.state.resultado} />//aca se llama al resultado de la consulta
         }
     
 
